@@ -84,7 +84,7 @@ pipeline {
 
         //                    def changedFiles = sh(script: 'git diff --name-only HEAD HEAD~1', returnStdout: true).trim();
         //                    echo "Changed files:\n${changedFiles}"
-                            def changedFiles = sh(script: 'git diff --name-only HEAD HEAD~1', returnStdout: true).split('\n');
+                            def changedFiles = sh(script: 'git diff --name-only HEAD HEAD~1', returnStdout: true).split('\n')
                             echo "Changed files:\n${changedFiles.join('\n')}"
 
                             def backendChanged = changedFiles.any {
@@ -119,8 +119,8 @@ pipeline {
                                 echo "No frontend changes detected. Skipping frontend deployment."
                             }
                         }
+                    }
         }
-    }
     }
     post {
         success {
