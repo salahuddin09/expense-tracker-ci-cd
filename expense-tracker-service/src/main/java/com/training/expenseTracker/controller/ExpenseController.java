@@ -1,7 +1,6 @@
 package com.training.expenseTracker.controller;
 
 import com.training.expenseTracker.model.Expense;
-import com.training.expenseTracker.model.User;
 import com.training.expenseTracker.service.ExpenseService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +29,7 @@ public class ExpenseController {
         expense2.setId(2);
         expense2.setTitle("shirt");
         expense2.setAmount(2000.0);
-        expense2.setCategory("Clothing");
+        expense2.setCategory("Clothing Brand");
 
         expenseService.addExpense(expense1);
         expenseService.addExpense(expense2);
