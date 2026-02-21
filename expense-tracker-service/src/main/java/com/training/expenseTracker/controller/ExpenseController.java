@@ -29,7 +29,7 @@ public class ExpenseController {
         expense2.setId(2);
         expense2.setTitle("shirt");
         expense2.setAmount(2000.0);
-        expense2.setCategory("Clothing Brand");
+        expense2.setCategory("Clothing");
 
         expenseService.addExpense(expense1);
         expenseService.addExpense(expense2);
