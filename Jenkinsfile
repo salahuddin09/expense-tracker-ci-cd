@@ -121,6 +121,7 @@ pipeline {
                         }
         }
     }
+    }
     post {
         success {
             // Actions after the build succeeds
