@@ -12,6 +12,12 @@ pipeline {
    //     nodejs "node"
   //  }
 
+    // ✅ RE-ENABLE TOOLS BLOCK
+    tools {
+        maven 'Maven 3.9.6'  // Name must match Global Tool Configuration
+        nodejs 'NodeJS 20'   // Name must match Global Tool Configuration
+    }
+
     environment {
         RENDER_API_KEY = credentials('render-api-key')
         RENDER_BACKEND_SERVICE_ID = 'srv-d6cnl8ogjchc739ot3hg'
