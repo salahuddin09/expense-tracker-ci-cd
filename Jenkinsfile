@@ -7,16 +7,12 @@ pipeline {
         retry(2)
         timeout(time: 60, unit: 'MINUTES')  // Overall pipeline timeout
     }
-   // tools {
-   //     maven "mvn"
-   //     nodejs "node"
-  //  }
 
-    // ✅ RE-ENABLE TOOLS BLOCK
     tools {
-        maven 'Maven 3.9.6'  // Name must match Global Tool Configuration
-        nodejs 'NodeJS 20'   // Name must match Global Tool Configuration
+        maven "mvn"
+        nodejs "node"
     }
+
 
     environment {
         RENDER_API_KEY = credentials('render-api-key')
