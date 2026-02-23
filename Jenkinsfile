@@ -25,7 +25,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'Git token', url: 'https://github.com/salahuddin09/expense-tracker-ci-cd.git'
+                git branch: 'main', credentialsId: 'Local_Commit', url: 'https://github.com/salahuddin09/expense-tracker-ci-cd.git'
             }
         }
         stage('Build') {
