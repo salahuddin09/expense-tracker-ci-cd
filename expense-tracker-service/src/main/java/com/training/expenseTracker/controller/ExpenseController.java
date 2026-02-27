@@ -31,6 +31,12 @@ public class ExpenseController {
         expense2.setAmount(2000.0);
         expense2.setCategory("Clothing");
 
+        Expense expense3 = new Expense();
+        expense3.setId(3);
+        expense3.setTitle("sampoo");
+        expense3.setAmount(2000.0);
+        expense3.setCategory("Cosmetics");
+
         expenseService.addExpense(expense1);
         expenseService.addExpense(expense2);
     }
